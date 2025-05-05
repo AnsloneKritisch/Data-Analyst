@@ -1,0 +1,3 @@
+for learning SQL -> got to the given Github link 
+
+link -> https://github.com/AnsloneKritisch/Structured-Query-Language
