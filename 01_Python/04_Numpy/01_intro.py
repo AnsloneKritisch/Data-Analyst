@@ -20,8 +20,13 @@ import numpy as np
 
 arr1 = np.array([1, 2, 3, 4, 5])
 print(arr1)
+
 # Shape function help to get the no. of data 
-print( arr1.shape)
+print( arr1.shape) # the out put will be (5,) which means it is a 1D array with 5 elements
+# we can reshape it to 5 rows and 1 column
+print(arr1.reshape(1, 5))
+# or the way i want it to be reshaped
+print(arr1.reshape(5, 1))
 
 arr2 = np.array([[1, 2, 3], [4, 5, 6]])
 print(arr2)
@@ -39,10 +44,19 @@ print(arr4)
 arr5 = np.ones((3, 4))
 print(arr5)
 
+arr5 = np.ones((3, 4), dtype=int)
+print(arr5)
+
 # Create a 2D NumPy array with 3 rows and 4 columns of zeros
 arr6 = np.zeros((3, 4))
 print(arr6)
 
+arr6 = np.zeros((3, 4), dtype=int)
+print(arr6)
+
+# Create a 2D NumPy array with 4 rows and 4 columns with 1s on the diagonal and 0s elsewhere
+arr7 = np.eye(4)
+print(arr7)
 
 
 # Create a 2D NumPy array with 2 rows and 3 columns
