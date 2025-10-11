@@ -22,16 +22,38 @@ import pandas as pd
 # Panel is a three-dimensional labeled data structure
 
 # Create a Series object
+
+# let's have a list of data 
+data = [1, 2, 3, 4, 5]
+# create a series from list
+series = pd.Series(data)
+print(series)
+# In output we can see that the index is automatically created starting from 0
+
+# Doing the same in short way
 series = pd.Series([1, 2, 3, 4, 5])
 print(series)
 
-# creata as series from dictonary
+# Just to check the type of series
+print(type(series))
+
+# create as series from dictonary
+# let's have a dictonary
+data = {'a': 1, 'b': 2, 'c': 3}
+# create a series from dictonary
+series = pd.Series(data)
+print(series)
+
+# Same stuff in short way
 series = pd.Series({'a': 1, 'b': 2, 'c': 3})
 print(series)
 
 
-data = [10 , 20, 30, 40, 50]
+# We can also create a series with custom index
+# The index parameter is used to specify the index of the series.
+# If not specified, the index is automatically created starting from 0.
+data = [10, 20, 30, 40, 50]
 index = ['a', 'b', 'c', 'd', 'e']
-series = pd.Series(data, index)
+series = pd.Series(data, index = index)
 print(series)
 

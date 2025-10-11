@@ -1,13 +1,27 @@
+# Import the pandas library (typically done at the top of the script)
 import pandas as pd
 
 # Dataframe is a two-dimensional labeled data structure with columns of potentially different types
+
+data = {
+    'Name': ['Alice', 'Bob', 'Charlie'],
+    'Age': [25, 30, 35],
+    'City': ['New York', 'Los Angeles', 'Chicago']
+}
+
+df = pd.DataFrame(data)
+print(df)
+# to check the type of dataframe
+print(type(df))
+
+# Create a DataFrame from a dictionary of lists
+
 data = {'a': [1, 2, 3], 'b': [4, 5, 6], 'c': [7, 8, 9]}
 df = pd.DataFrame(data)
 print(df)
 
 
-# Import the pandas library (typically done at the top of the script)
-import pandas as pd
+
 
 # Create a dataframe from a list of dictionaries
 data = [
